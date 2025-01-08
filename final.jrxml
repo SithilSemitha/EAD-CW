@@ -1,0 +1,109 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="final" language="java" pageWidth="620" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="eef0d77a-e3cb-46f3-a45d-3adef32d609d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="mysql"/>
+	<query language="SQL"><![CDATA[SELECT * FROM  payment;]]></query>
+	<field name="sid" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="sid"/>
+		<property name="com.jaspersoft.studio.field.label" value="sid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<field name="pid" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="pid"/>
+		<property name="com.jaspersoft.studio.field.label" value="pid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<field name="DATE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="DATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="DATE"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<field name="FullName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="FullName"/>
+		<property name="com.jaspersoft.studio.field.label" value="FullName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<field name="Termfees" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="Termfees"/>
+		<property name="com.jaspersoft.studio.field.label" value="Termfees"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<field name="additionalFees" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="additionalFees"/>
+		<property name="com.jaspersoft.studio.field.label" value="additionalFees"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+	</field>
+	<variable name="Totalfees" calculation="Sum" class="java.lang.Double">
+		<expression><![CDATA[$F{Termfees}]]></expression>
+	</variable>
+	<variable name="additionaltotal" calculation="Sum" class="java.lang.Double">
+		<expression><![CDATA[$F{additionalFees}]]></expression>
+	</variable>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="aea362df-14e3-4438-90a4-153a8f03f0f2" x="163" y="40" width="228" height="30" fontSize="22.0" bold="false" italic="true">
+			<text><![CDATA[Payment Information]]></text>
+		</element>
+		<element kind="staticText" uuid="c327a5af-9e2a-4a45-ac65-050c2ffd7594" x="122" y="10" width="310" height="30" fontSize="22.0" bold="true">
+			<text><![CDATA[ASIAN GRAMMAR SCHOOL]]></text>
+		</element>
+	</title>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="41" splitType="Stretch">
+		<element kind="staticText" uuid="afe33211-001c-44bb-8cc6-51eda232e4c5" x="0" y="10" width="80" height="20" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Payment ID]]></text>
+		</element>
+		<element kind="staticText" uuid="9c15b77e-d31f-4f75-8145-540923565382" x="100" y="10" width="80" height="20" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Student ID]]></text>
+		</element>
+		<element kind="staticText" uuid="4d308c69-772a-4b1d-931b-37c5a8e1e8fd" x="200" y="10" width="80" height="20" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Date]]></text>
+		</element>
+		<element kind="staticText" uuid="ea3fdd8f-e92c-4ef2-aa45-1d1f376b4b4e" x="295" y="10" width="65" height="20" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Name]]></text>
+		</element>
+		<element kind="staticText" uuid="5df0142e-22c9-48ba-b9cd-ee5d887f53d3" x="380" y="10" width="70" height="20" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Term Fees]]></text>
+		</element>
+		<element kind="staticText" uuid="b8ed32bf-e8ac-4d43-b99a-ec4aac685426" x="470" y="10" width="105" height="20" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Additional Cost]]></text>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="41" splitType="Stretch">
+			<element kind="textField" uuid="ec7b8914-940c-4aac-9b60-eb86b2b672ad" x="0" y="10" width="80" height="20" bold="true" vTextAlign="Middle">
+				<expression><![CDATA[$F{pid}]]></expression>
+			</element>
+			<element kind="textField" uuid="76de912d-a311-47b5-9244-325942a05756" x="100" y="10" width="80" height="20" bold="true" vTextAlign="Middle">
+				<expression><![CDATA[$F{sid}]]></expression>
+			</element>
+			<element kind="textField" uuid="12be4268-23ca-4215-b49e-b2931cd0c1d4" x="200" y="10" width="70" height="20" bold="true" vTextAlign="Middle">
+				<expression><![CDATA[$F{DATE}]]></expression>
+			</element>
+			<element kind="textField" uuid="85e27cd6-6b23-4f20-a29b-e0ecb7a29420" x="290" y="10" width="70" height="20" bold="true" vTextAlign="Middle">
+				<expression><![CDATA[$F{FullName}]]></expression>
+			</element>
+			<element kind="textField" uuid="0ced2564-c0aa-4bfb-8dd2-0b2b1be80706" x="380" y="10" width="70" height="20" bold="true" vTextAlign="Middle">
+				<expression><![CDATA[$F{Termfees}]]></expression>
+			</element>
+			<element kind="textField" uuid="e021f20f-4225-4028-b8ce-77557367a632" x="480" y="10" width="90" height="20" bold="true" vTextAlign="Middle">
+				<expression><![CDATA[$F{additionalFees}]]></expression>
+			</element>
+			<element kind="line" uuid="e79a463b-cbc2-41ad-9560-730487157dcf" x="-16" y="0" width="591" height="1"/>
+		</band>
+	</detail>
+	<columnFooter height="64" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="37" splitType="Stretch">
+		<element kind="textField" uuid="86fb998f-9376-4158-a9f5-e16ddedab8d8" x="360" y="10" width="72" height="16" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[$V{Totalfees}]]></expression>
+		</element>
+		<element kind="line" uuid="7fb24620-96d2-4283-9d3c-654c771275f5" x="359" y="3" width="80" height="1"/>
+		<element kind="line" uuid="49f94674-1780-4ec5-a9f7-023a68046e3e" x="360" y="31" width="80" height="1"/>
+		<element kind="textField" uuid="21e69421-b6a0-4473-b013-b5dd262a29f8" x="442" y="6" width="100" height="22" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[$V{additionaltotal}]]></expression>
+		</element>
+		<element kind="line" uuid="80e156ee-9fed-4b3d-83a0-1c27197247d9" x="447" y="3" width="80" height="1"/>
+		<element kind="line" uuid="eca1b1c7-cf28-43f4-b409-290bbdd892ba" x="448" y="31" width="80" height="1"/>
+	</summary>
+</jasperReport>

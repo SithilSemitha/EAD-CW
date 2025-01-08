@@ -1,0 +1,143 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="parent" language="java" pageWidth="840" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7b66835a-d0c7-4f7d-bae2-6323179de58b">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="mysql"/>
+	<query language="SQL"><![CDATA[SELECT * FROM student;]]></query>
+	<field name="sid" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="sid"/>
+		<property name="com.jaspersoft.studio.field.label" value="sid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="sFullName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="sFullName"/>
+		<property name="com.jaspersoft.studio.field.label" value="sFullName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="age" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="age"/>
+		<property name="com.jaspersoft.studio.field.label" value="age"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="address" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="address"/>
+		<property name="com.jaspersoft.studio.field.label" value="address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="mobile" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="mobile"/>
+		<property name="com.jaspersoft.studio.field.label" value="mobile"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="email" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="email"/>
+		<property name="com.jaspersoft.studio.field.label" value="email"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="DOB" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="DOB"/>
+		<property name="com.jaspersoft.studio.field.label" value="DOB"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="Grade" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Grade"/>
+		<property name="com.jaspersoft.studio.field.label" value="Grade"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="enrollmentDate" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="enrollmentDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="enrollmentDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="FName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="FName"/>
+		<property name="com.jaspersoft.studio.field.label" value="FName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="FMobile" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="FMobile"/>
+		<property name="com.jaspersoft.studio.field.label" value="FMobile"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="FAddress" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="FAddress"/>
+		<property name="com.jaspersoft.studio.field.label" value="FAddress"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="MName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="MName"/>
+		<property name="com.jaspersoft.studio.field.label" value="MName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="MMobile" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="MMobile"/>
+		<property name="com.jaspersoft.studio.field.label" value="MMobile"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<field name="MAddress" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="MAddress"/>
+		<property name="com.jaspersoft.studio.field.label" value="MAddress"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="3d999127-ac9d-4a8a-b73f-e2ead44e639b" x="297" y="40" width="190" height="30" fontSize="22.0" italic="true" bold="false">
+			<text><![CDATA[Parent Information]]></text>
+		</element>
+		<element kind="staticText" uuid="b7c99638-f4b3-4b6a-a1c4-af088d13bc89" x="247" y="10" width="310" height="30" fontSize="22.0" bold="true">
+			<text><![CDATA[ASIAN GRAMMAR SCHOOL]]></text>
+		</element>
+	</title>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="44" splitType="Stretch">
+		<element kind="staticText" uuid="b14f37f5-5d43-4e1c-a50d-931d794bbb05" x="10" y="11" width="70" height="20" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Student ID]]></text>
+		</element>
+		<element kind="staticText" uuid="b266d736-c954-4570-b8e1-2c49f1014aab" x="83" y="11" width="80" height="20" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Fathers Name]]></text>
+		</element>
+		<element kind="staticText" uuid="74f2ca5c-6c36-4851-96ba-6428133daeea" x="186" y="10" width="90" height="20" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Fathers Mobile]]></text>
+		</element>
+		<element kind="staticText" uuid="1db77915-a1f5-4e42-bd80-b8ec6e2a0d54" x="298" y="10" width="129" height="20" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Fathers Address]]></text>
+		</element>
+		<element kind="staticText" uuid="21e5a6fd-5d50-4d6e-9ef9-334ec7dc4d6b" x="680" y="11" width="100" height="20" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Mothers Address]]></text>
+		</element>
+		<element kind="staticText" uuid="a58fde05-4d79-43df-a2fd-ef39f1938e89" x="559" y="11" width="90" height="20" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Mothers Mobile]]></text>
+		</element>
+		<element kind="staticText" uuid="81f87968-e824-4872-bfdf-b52232d24c51" x="436" y="11" width="100" height="20" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Mothers Name]]></text>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="50" splitType="Stretch">
+			<element kind="line" uuid="28e683ee-2e4e-4b73-a9bb-fb2b5daf7794" x="10" y="10" width="778" height="1"/>
+			<element kind="textField" uuid="2d923408-2057-4bbf-80c9-03ce1e42ed07" x="13" y="20" width="56" height="20" bold="true" vTextAlign="Middle">
+				<expression><![CDATA[$F{sid}]]></expression>
+			</element>
+			<element kind="textField" uuid="732e7ea7-f27e-47d0-a7c6-875097e90cc0" x="80" y="20" width="100" height="20" bold="true" vTextAlign="Middle">
+				<expression><![CDATA[$F{FName}]]></expression>
+			</element>
+			<element kind="textField" uuid="c0669dff-7d68-4745-a5fc-a8611f9c989d" x="186" y="20" width="100" height="20" bold="true" vTextAlign="Middle">
+				<expression><![CDATA[$F{FMobile}]]></expression>
+			</element>
+			<element kind="textField" uuid="d9061504-bbf3-443e-bb56-1d1ebaa325f3" x="298" y="20" width="128" height="20" bold="true" vTextAlign="Middle">
+				<expression><![CDATA[$F{FAddress}]]></expression>
+			</element>
+			<element kind="textField" uuid="8a83d6be-959f-44e6-8fe5-632eed18796d" x="436" y="20" width="114" height="20" bold="true" vTextAlign="Middle">
+				<expression><![CDATA[$F{MName}]]></expression>
+			</element>
+			<element kind="textField" uuid="a37cc035-e823-4d22-9687-a5d239def5ca" x="561" y="20" width="108" height="20" bold="true" vTextAlign="Middle">
+				<expression><![CDATA[$F{MMobile}]]></expression>
+			</element>
+			<element kind="textField" uuid="08e6bfbf-17da-4202-930b-80ec22793ad2" x="680" y="20" width="108" height="20" bold="true" vTextAlign="Middle">
+				<expression><![CDATA[$F{MAddress}]]></expression>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
