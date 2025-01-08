@@ -1,0 +1,48 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="login" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="dd8127f0-bf26-4ec4-84fe-908abb55eaf1">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="mysql"/>
+	<query language="SQL"><![CDATA[SELECT *FROM login]]></query>
+	<field name="username" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="username"/>
+		<property name="com.jaspersoft.studio.field.label" value="username"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="login"/>
+	</field>
+	<field name="password" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="password"/>
+		<property name="com.jaspersoft.studio.field.label" value="password"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="login"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="97cae640-8a4a-451c-9d40-f50045a7728d" x="177" y="40" width="190" height="30" fontSize="22.0" bold="false" italic="true">
+			<text><![CDATA[Login Information]]></text>
+		</element>
+		<element kind="staticText" uuid="95976176-ad92-48c7-971a-ec514ee72cb3" x="120" y="10" width="310" height="30" fontSize="22.0" bold="true">
+			<text><![CDATA[ASIAN GRAMMAR SCHOOL]]></text>
+		</element>
+	</title>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="35" splitType="Stretch">
+		<element kind="staticText" uuid="b246f325-0785-47c3-8b74-5908d5aa0caf" x="160" y="13" width="70" height="20" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Username]]></text>
+		</element>
+		<element kind="staticText" uuid="2c89e025-6e68-4fd9-b9d2-f72a8a1ae48c" x="289" y="12" width="70" height="20" fontSize="12.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Password]]></text>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="46" splitType="Stretch">
+			<element kind="textField" uuid="70b0e95b-62b4-4ab9-8214-ee89ac0cb66d" x="150" y="11" width="90" height="30" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{username}]]></expression>
+			</element>
+			<element kind="line" uuid="68d9b5eb-4baa-43fe-b96c-14056bcba079" x="140" y="5" width="227" height="1"/>
+			<element kind="textField" uuid="f341535a-8faa-4b20-a58f-789070b447de" x="280" y="10" width="90" height="30" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{password}]]></expression>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
