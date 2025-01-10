@@ -117,7 +117,7 @@ public class reportFrame extends javax.swing.JFrame {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/AGS","root","sithil@12345");
-            String reportPath = "C:\\Reports\\final.jrxml";
+            String reportPath = "final.jrxml";
             JasperReport jr = JasperCompileManager.compileReport(reportPath);
             JasperPrint jp = JasperFillManager.fillReport(jr,null,con);
             JasperViewer view =new JasperViewer(jp, false);
@@ -138,7 +138,7 @@ public class reportFrame extends javax.swing.JFrame {
           try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/AGS","root","sithil@12345");
-            String reportPath = "C:\\Reports\\STUDENT.jrxml";
+            String reportPath = "STUDENT.jrxml";
             JasperReport jer = JasperCompileManager.compileReport(reportPath);
             JasperPrint jp = JasperFillManager.fillReport(jer,null,con);
             JasperViewer view =new JasperViewer(jp, false);
@@ -159,7 +159,7 @@ public class reportFrame extends javax.swing.JFrame {
          try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/AGS","root","sithil@12345");
-            String reportPath = "C:\\Reports\\parent.jrxml";
+            String reportPath = "parent.jrxml";
             JasperReport jer = JasperCompileManager.compileReport(reportPath);
             JasperPrint jp = JasperFillManager.fillReport(jer,null,con);
             JasperViewer view =new JasperViewer(jp, false);
@@ -180,7 +180,7 @@ public class reportFrame extends javax.swing.JFrame {
          try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/AGS","root","sithil@12345");
-            String reportPath = "C:\\Reports\\login.jrxml";
+            String reportPath = "login.jrxml";
             JasperReport jer = JasperCompileManager.compileReport(reportPath);
             JasperPrint jp = JasperFillManager.fillReport(jer,null,con);
             JasperViewer view =new JasperViewer(jp, false);
